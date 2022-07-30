@@ -12,6 +12,7 @@ public:
 	int len();
 	void append(const char* str);
 	int find(const char* str);
+	MyString sub(int begin, int end);
 	MyString* split();
 
 	int m_calStrLen(const char* str);

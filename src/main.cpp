@@ -26,5 +26,10 @@ int main()
 	paramStr.append("+wow");
 	std::cout << "  append test: -----------> " << paramStr << std::endl;
 	std::cout << "  len test: --------------> " << paramStr.len() << std::endl;
+	std::cout << "  find (ow) test: --------> " << paramStr.find("ow") << std::endl;
+	std::cout << "  find (oww) test: -------> " << paramStr.find("oww") << std::endl;
+	MyString subStr = paramStr.sub(1, 4);
+	std::cout << "  sub test: --------------> " << subStr << std::endl;
+
 
 }

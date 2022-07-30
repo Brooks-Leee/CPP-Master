@@ -168,6 +168,74 @@ void MyString::append(const char* str)
 	m_strLen = len;
 }
 
+int MyString::find(const char* str)
+{
+	int strlen = m_calStrLen(str);
+	for (int i = 0; i < m_strLen; i++)
+	{
+		if (m_myString[i] == str[0])
+		{	
+			int cachei = i;
+			bool isBreak = 0;
+			for (int j = 0; j < strlen; j++, cachei++)
+			{
+				if (m_myString[cachei] != str[j])
+				{
+					isBreak = 1;
+					break;
+				}
+			}
+			if (isBreak == 0)
+			{
+				return i;
+			}
+		}
+	}
+	// if do not return above, that means we didn't find it
+	return -1;
+}
+
+MyString MyString::sub(int begin, int end)
+{
+	int beginIndex = begin;
+	int endIndex = end;
+	if (begin > end)
+	{
+		std::cout << "You Moron!!! First param is begin Index" << std::endl;
+		return *this;
+	}
+
+	if (begin > m_strLen)
+	{
+		return *this;
+	}
+
+	if (begin < 0)
+	{
+		beginIndex = 0;
+	}
+
+	if (end > m_strLen)
+	{
+		endIndex = m_strLen - 1;
+	}
+
+	// add 1 : end - begin need add 1 to get the middle num
+	// add another 1 : for '\0'
+	int len = endIndex - beginIndex + 1 + 1;
+	char* strTemp = new char[len];
+
+	for (int i = beginIndex, j = 0; i < endIndex + 1; i++, j++)
+	{
+		strTemp[j] = m_myString[i];
+	}
+
+	strTemp[len] = '\0';
+
+		
+	return MyString(strTemp);
+}
+
 int MyString::m_calStrLen(const char* str)
 {
 	int len = 0;
