@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+
 class MyString
 {
 public:
@@ -7,17 +9,20 @@ public:
 
 	~MyString();
 
-private:
 	int len();
-	void append();
-	int find();
+	void append(const char* str);
+	int find(const char* str);
 	MyString* split();
 
-	int m_Strlen(const char* str);
+	int m_calStrLen(const char* str);
 
 
-	bool operator==(const MyString& mystr);
-	MyString operator=(const MyString& mystr);
+public:
+
+	bool operator==(const MyString& str);
+	MyString operator=(const MyString& str);
+	MyString operator=(const char* str);
+	friend std::ostream& operator<<(std::ostream& out, const MyString& str);
 
 private:
 	char* m_myString;

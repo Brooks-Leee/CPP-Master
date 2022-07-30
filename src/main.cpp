@@ -4,5 +4,27 @@
 
 int main()
 {
-	MyString str =  MyString("wow");
+	MyString defualtStr = MyString();
+
+	MyString paramStr =  MyString("wow");
+
+	MyString cpyConstructStr = MyString(paramStr);
+
+	MyString equalMyStr = paramStr;
+
+	MyString equalCharStr = "wow";
+	
+	bool boolTest = paramStr == equalCharStr;
+
+
+	std::cout << "  defualt construct: -----> " << defualtStr << std::endl;
+	std::cout << "  param construct: -------> " << paramStr << std::endl;
+	std::cout << "  copy construct: --------> " << cpyConstructStr << std::endl;
+	std::cout << "  = MyString test: -------> " << equalMyStr << std::endl;
+	std::cout << "  = char* test: ----------> " << equalCharStr << std::endl;
+	std::cout << "  bool test: -------------> " << boolTest << std::endl;
+	paramStr.append("+wow");
+	std::cout << "  append test: -----------> " << paramStr << std::endl;
+	std::cout << "  len test: --------------> " << paramStr.len() << std::endl;
+
 }
