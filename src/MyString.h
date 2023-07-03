@@ -17,7 +17,6 @@ public:
 
 	int m_calStrLen(const char* str);
 
-
 public:
 
 	bool operator==(const MyString& str);

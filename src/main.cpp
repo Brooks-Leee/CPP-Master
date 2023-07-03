@@ -17,7 +17,7 @@ int main()
 	bool boolTest = paramStr == equalCharStr;
 
 
-	std::cout << "  defualt construct: -----> " << defualtStr << std::endl;
+	std::cout << "  default construct: -----> " << defualtStr << std::endl;
 	std::cout << "  param construct: -------> " << paramStr << std::endl;
 	std::cout << "  copy construct: --------> " << cpyConstructStr << std::endl;
 	std::cout << "  = MyString test: -------> " << equalMyStr << std::endl;
