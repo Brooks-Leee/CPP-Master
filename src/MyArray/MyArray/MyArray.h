@@ -88,7 +88,7 @@ void MyArray<T>::print()
 
 template<typename T>
 void MyArray<T>::insert(int index, const T& data)
-{
+{ 
 	if (index >= 0 && index <= m_size)
 	{
 		if (m_size == m_capacity)
