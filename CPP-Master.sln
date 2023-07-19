@@ -9,7 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyArray", "src\MyArray\MyAr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MydualList", "src\MydualList\MydualList.vcxproj", "{B31C4190-E08D-4EC7-8D8C-7A1052DBE528}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyRingbuffer", "MyRingbuffer\MyRingbuffer.vcxproj", "{B37D318B-2435-4900-8633-3C09EC8BEC99}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyRingbuffer", "src\MyRingbuffer\MyRingbuffer.vcxproj", "{B37D318B-2435-4900-8633-3C09EC8BEC99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
