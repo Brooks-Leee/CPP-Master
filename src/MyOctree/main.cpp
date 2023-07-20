@@ -4,7 +4,6 @@
 
 
 
-
 int main() {
 
 	FVector3 point(0, 0, 0);

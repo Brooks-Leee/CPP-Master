@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyRingbuffer", "src\MyRingb
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyOctree", "src\MyOctree\MyOctree.vcxproj", "{AD566A7D-A53B-4095-9682-B175B92F60AB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Skiplist", "src\Project1\Project1.vcxproj", "{63FFCABD-0CEE-4D17-9D21-01B1E053E287}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{AD566A7D-A53B-4095-9682-B175B92F60AB}.Release|x64.Build.0 = Release|x64
 		{AD566A7D-A53B-4095-9682-B175B92F60AB}.Release|x86.ActiveCfg = Release|Win32
 		{AD566A7D-A53B-4095-9682-B175B92F60AB}.Release|x86.Build.0 = Release|Win32
+		{63FFCABD-0CEE-4D17-9D21-01B1E053E287}.Debug|x64.ActiveCfg = Debug|x64
+		{63FFCABD-0CEE-4D17-9D21-01B1E053E287}.Debug|x64.Build.0 = Debug|x64
+		{63FFCABD-0CEE-4D17-9D21-01B1E053E287}.Debug|x86.ActiveCfg = Debug|Win32
+		{63FFCABD-0CEE-4D17-9D21-01B1E053E287}.Debug|x86.Build.0 = Debug|Win32
+		{63FFCABD-0CEE-4D17-9D21-01B1E053E287}.Release|x64.ActiveCfg = Release|x64
+		{63FFCABD-0CEE-4D17-9D21-01B1E053E287}.Release|x64.Build.0 = Release|x64
+		{63FFCABD-0CEE-4D17-9D21-01B1E053E287}.Release|x86.ActiveCfg = Release|Win32
+		{63FFCABD-0CEE-4D17-9D21-01B1E053E287}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,6 @@
 #include "MyOctree.h"
 
 
-
-
-
-
 void MyOctreeNode::subdivide()
 {
 	m_arrChildren.reserve(8);
@@ -42,7 +38,6 @@ void MyOctreeNode::subdivide()
 
 void MyOctreeNode::insert(FVector3 point)
 {
-
 	// 如果不在当前节点范围内，则直接返回
 	if (!InterSection(point))
 	{
